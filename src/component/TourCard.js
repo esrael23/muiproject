@@ -3,8 +3,9 @@ import "../App.css"
 import React from 'react'
 import Tour from '../images/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg'
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import tour from '../App'
 
-const TourCard = ({tour}) => {
+const TourCard = (tour) => {
   return (
     <Grid item xs={12} sm={6} md={3}>
     <Paper elevation={3} sx={{ }}>
@@ -13,8 +14,8 @@ const TourCard = ({tour}) => {
     width= '100%'
       className="img" alt="..."/>
       <Box paddingX={1}>
-      <Typography variant="subtitle1" component='h2' color="initial">
-        {/* {tours.name} */}
+      <Typography variant="subtitle1" component='h2' color="initial" >
+        {tour.name}
       </Typography>
       </Box>
       <Box sx={{
